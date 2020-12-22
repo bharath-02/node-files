@@ -7,7 +7,7 @@ require('dotenv').config();
 var server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     // Reading the directory
-    fs.readdir('D:\Task', (err, files) => {
+    fs.readdir('D:\\Task', (err, files) => {
         if (err) throw err;
         var myString = '';
         files.forEach((item) => {
